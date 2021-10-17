@@ -66,9 +66,12 @@ class StringCalculatorShould {
     }
 
 
-    
 
-
+    @Test
+    void count_no_of_times_add_called(){
+        StringCalculator stringCalculator = new StringCalculator();
+        assertEquals(10, stringCalculator.GetCalledCount());
+    }
 
 
 
