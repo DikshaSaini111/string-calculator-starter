@@ -52,4 +52,13 @@ class StringCalculatorShould {
     }
 
 
+    @Test
+    void delimter_with_any_length(){
+        StringCalculator stringCalculator= new StringCalculator();
+        assertEquals(6, stringCalculator.add("//[***]\\n1***2***3"));
+    }
+
+
+
+
 }
