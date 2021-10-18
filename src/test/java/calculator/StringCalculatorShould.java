@@ -79,5 +79,11 @@ class StringCalculatorShould {
         assertEquals(6, stringCalculator.add("//[**][%%]\\n1**2%%3"));
     }
 
+    @Test
+    void string_with_negative_numbers(){
+        StringCalculator stringCalculator = new StringCalculator();
+        assertEquals(-3, stringCalculator.add("1-3"));
+    }
 
+    
 }
