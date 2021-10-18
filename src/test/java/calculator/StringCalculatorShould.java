@@ -73,7 +73,11 @@ class StringCalculatorShould {
         assertEquals(10, stringCalculator.GetCalledCount());
     }
 
-
+    @Test
+    void multiple_delimeters_with_length_longer_than_one_char(){
+        StringCalculator stringCalculator= new StringCalculator();
+        assertEquals(6, stringCalculator.add("//[**][%%]\\n1**2%%3"));
+    }
 
 
 }
